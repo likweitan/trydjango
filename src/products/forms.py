@@ -11,3 +11,10 @@ class ProductForm(forms.ModelForm):
             'description',
             'price'
         ]
+
+
+# Pure Django Form
+class RawProductForm(forms.Form):
+    title = forms.CharField()
+    description = forms.CharField()
+    price = forms.DecimalField()
