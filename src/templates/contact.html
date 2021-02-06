@@ -1,2 +1,11 @@
-<h1>Contact Page</h1>
-<p>I am cool</p>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Contact Page</h1>
+    {{ request.user}}
+    <p>I am cool</p>
+{% endblock %}
+
+{% block anothercontent %}
+    <h1>special</h1>
+{% endblock %}
