@@ -7,6 +7,7 @@ from .models import Product
 # Create your views here.
 
 
+"""
 def product_create_view(request):
     my_form = RawProductForm()
     if request.method == "POST":
@@ -21,6 +22,7 @@ def product_create_view(request):
         'form': my_form
     }
     return render(request, "products/product_create.html", context)
+"""
 
 
 """
@@ -33,7 +35,6 @@ def product_create_view(request):
 """
 
 
-"""
 def product_create_view(request):
     form = ProductForm(request.POST or None)
     if form.is_valid():
@@ -43,7 +44,6 @@ def product_create_view(request):
         'form': form
     }
     return render(request, "products/product_create.html", context)
-"""
 
 
 def product_detail_view(request):
